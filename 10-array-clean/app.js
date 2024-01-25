@@ -2,7 +2,7 @@ const func = (num) => num === 7;
 
 function filterArray(array, func) {
 
-    let filteredArray = [];
+    const filteredArray = [];
 
     for (let i = 0; i < array.length; i++) {
         if (!func(array[i])) {

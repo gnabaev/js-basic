@@ -4,8 +4,8 @@ document.querySelector('.plus').addEventListener('click', function () {
     if (!number1 && !number2) {
         return;
     }
-    document.querySelector('.result').innerText = number1 + number2;
-
+    const resultElement = document.querySelector('.result');
+    resultElement.innerText = number1 + number2;
 });
 
 document.querySelector('.minus').addEventListener('click', function () {
@@ -14,7 +14,8 @@ document.querySelector('.minus').addEventListener('click', function () {
     if (!number1 && !number2) {
         return;
     }
-    document.querySelector('.result').innerText = number1 - number2;
+    const resultElement = document.querySelector('.result');
+    resultElement.innerText = number1 - number2;
 });
 
 document.querySelector('.multiply').addEventListener('click', function () {
@@ -23,7 +24,8 @@ document.querySelector('.multiply').addEventListener('click', function () {
     if (!number1 && !number2) {
         return;
     }
-    document.querySelector('.result').innerText = number1 * number2;
+    const resultElement = document.querySelector('.result');
+    resultElement.innerText = number1 * number2;
 });
 
 document.querySelector('.subtract').addEventListener('click', function () {
@@ -32,5 +34,6 @@ document.querySelector('.subtract').addEventListener('click', function () {
     if (!number1 && !number2) {
         return;
     }
-    document.querySelector('.result').innerText = number1 / number2;
+    const resultElement = document.querySelector('.result');
+    resultElement.innerText = number1 / number2;
 });
